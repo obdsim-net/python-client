@@ -18,13 +18,13 @@ This client connects to a remote OBD-II simulation server and forwards traffic b
 ## Installation
 
 ```bash
-pip install git+https://github.com/your-org/client-py.git
+pip install git+https://github.com/obdsim-net/python-client.git
 ```
 
 Or clone and install locally:
 
 ```bash
-git clone https://github.com/your-org/client-py.git
+git clone https://github.com/obdsim-net/python-client.git
 cd client-py
 pip install .
 ```

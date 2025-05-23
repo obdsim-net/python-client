@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "client-py"
+name = "obdsim-net-python-client"
 version = "0.1.0"
 description = "OBD2 TCP↔CAN proxy client"
 readme = "README.md"
