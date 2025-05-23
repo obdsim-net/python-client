@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "client-py"
+version = "0.1.0"
+description = "OBD2 TCP↔CAN proxy client"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [{name = "obdsim.net", email = "obdsim.net@gmail.com"}]
+dependencies = [
+    "python-can",
+]
+
+[project.scripts]
+client-py = "client_py.__main__:main"
