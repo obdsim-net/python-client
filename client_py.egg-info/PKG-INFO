@@ -1,3 +1,14 @@
+Metadata-Version: 2.2
+Name: client-py
+Version: 0.1.0
+Summary: OBD2 TCP↔CAN proxy client
+Author-email: "obdsim.net" <obdsim.net@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-can
+
 # client-py
 
 A lightweight Python client that bridges TCP and CAN interfaces for OBD-II simulation via [obdsim.net](https://obdsim.net).
@@ -18,13 +29,13 @@ This client connects to a remote OBD-II simulation server and forwards traffic b
 ## Installation
 
 ```bash
-pip install git+https://github.com/obdsim-net/python-client.git
+pip install git+https://github.com/your-org/client-py.git
 ```
 
 Or clone and install locally:
 
 ```bash
-git clone https://github.com/obdsim-net/python-client.git
+git clone https://github.com/your-org/client-py.git
 cd client-py
 pip install .
 ```
@@ -34,7 +45,7 @@ pip install .
 ## Usage
 
 ```bash
-python3 -m obdsim_client \
+python3 -m client \
   --config <your-config-id> \
   --host port.obdsim.net \
   --port 1337 \
@@ -57,7 +68,7 @@ python3 -m obdsim_client \
 Assuming `vcan0` is set up and your config ID is `abc123`:
 
 ```bash
-python3 -m obdsim_client --config abc123 --channel vcan0
+python3 -m client --config abc123 --channel vcan0
 ```
 
 ---
